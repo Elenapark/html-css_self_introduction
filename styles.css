@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  max-width: 76rem;
+  text-align: center;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  padding: 0.5em 1rem;
+  background-color: rosybrown;
+  z-index: 1;
+}
+
+.navbar_logo {
+  margin: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 1.2rem;
+  color: white;
+}
+
+.navbar_logo i {
+  margin-right: 0.5em;
+}
+
+.navbar_logo a {
+  color: white;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.navbar_menu_item {
+  margin: 0;
+  padding: 0.2em 0.8em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar_menu_item:hover {
+  background-color: saddlebrown;
+  color: white;
+  transform: scale(1.1);
+  transition: all 100ms ease-in;
+}
+
+h1 {
+  padding: 0.5em 1em;
+  font-size: 3rem;
+}
+
+h3 {
+  padding: 1em;
+  font-size: 1.7rem;
+}
+
+p {
+  padding: 1em 5em;
+  font-size: 1.5rem;
+}
+
+.about,
+.whatIlove {
+  padding-bottom: 1em;
+}
+.about__skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  width: 10em;
+  height: 100%;
+}
+.skill__icon {
+  padding-top: 0.3em;
+  width: 130px;
+  height: 130px;
+  border: 1px solid rosybrown;
+  border-radius: 50%;
+}
+
+.skill__icon i {
+  font-size: 5rem;
+  margin-top: 0.2em;
+  transition: all 100ms ease-in;
+}
+
+.skill__icon i:hover {
+  transform: rotate(-20deg) scale(1.1);
+  color: rosybrown;
+}
+
+.skill__title {
+  margin-top: 1em;
+}
+
+.skill__description {
+  margin: 1em;
+  font-size: 1rem;
+  color: dimgray;
+}
+
+.whatIlove {
+  background-color: lightgray;
+  padding-bottom: 2em;
+}
+
+.whatIlove__classification {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detail {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rosybrown;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  opacity: 0.9;
+  flex-direction: column;
+  color: white;
+}
+
+.whatIlove__img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+}
+
+.description:hover {
+  opacity: 0;
+  transition: all 250ms ease-out;
+}
+
+.contact {
+  background-color: rosybrown;
+  padding-bottom: 2em;
+}
+
+.contact h3 {
+  padding-top: 0;
+}
+
+.contact a {
+  margin: 2em 1em;
+  font-size: 4rem;
+  transition: all 150ms ease-in;
+}
+
+.contact a:hover {
+  color: lightgray;
+}
+
+.contact__upBtn {
+  position: sticky;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  font-size: 0.2rem;
+}
