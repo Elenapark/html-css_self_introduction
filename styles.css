@@ -84,8 +84,9 @@ p {
   font-size: 1.5rem;
 }
 
-.about,
-.whatIlove {
+#about,
+#whatIlove {
+  padding-top: 3em;
   padding-bottom: 1em;
 }
 .about__skills {
@@ -126,7 +127,7 @@ p {
   color: dimgray;
 }
 
-.whatIlove {
+#whatIlove {
   background-color: lightgray;
   padding-bottom: 2em;
 }
@@ -169,22 +170,23 @@ p {
   border-radius: 50%;
 }
 
-.contact {
+#contact {
   background-color: rosybrown;
   padding-bottom: 2em;
 }
 
-.contact h3 {
+#contact h3 {
   padding-top: 0;
 }
 
-.contact a {
+#contact a {
   margin: 2em 1em;
   font-size: 4rem;
+  cursor: pointer;
   transition: all 150ms ease-in;
 }
 
-.contact a:hover {
+#contact a:hover {
   color: lightgray;
 }
 
@@ -223,7 +225,7 @@ p {
     height: 200px;
   }
 
-  .contact a {
+  #contact a {
     margin: 1em 0.5em;
     font-size: 2rem;
   }

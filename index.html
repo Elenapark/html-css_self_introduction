@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <title>Elena's world</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <nav id="navbar">
@@ -21,15 +22,15 @@
         <a href="#">Sungeun Park</a>
       </div>
       <ul class="navbar_menu">
-        <li class="navbar_menu_item">About Me</li>
-        <li class="navbar_menu_item">What I love</li>
-        <li class="navbar_menu_item">Contact</li>
+        <li class="navbar_menu_item" data-link="#about">About Me</li>
+        <li class="navbar_menu_item" data-link="#whatIlove">What I love</li>
+        <li class="navbar_menu_item" data-link="#contact">Contact</li>
       </ul>
     </nav>
-    <section class="home">
+    <section id="home">
         <img class="home__background" style="background:cover/center no-repeat" src="./images/backgroundImage2.png" width="100%" height="600px" alt="home background">
     </section>
-    <section class="about">
+    <section id="about">
         <h1>🎈 About me</h1>
         <h3>What I did before...</h3>
         <p>프론트엔드 개발자가 되기 위한 공부를 시작하기 전에는 <br/>무역회사에서 사무직으로 근무하였습니다. <br/>전공을 살려 5년 간 보람차게 일하였지만, <br/>새로운 도전을 위해 퇴사한 후 개발 공부를 시작했습니다🙌</p>
@@ -46,7 +47,7 @@
                     <div class="skill__icon"><i class="fab fa-react"></i>
                     </div>
                     <div class="skill__title">JavaScript, React</div>
-                    <div class="skill__description">JS, React로<br/>프론트엔드 구현히기</div>
+                    <div class="skill__description">JS, React로<br/>프론트엔드 구현하기</div>
                 </div>
                 <div class="skill">
                     <div class="skill__icon"><i class="fab fa-node"></i>
@@ -57,7 +58,7 @@
                 
             </div>
     </section>
-    <section class="whatIlove">
+    <section id="whatIlove">
         <h1>✨ What I love</h1>
         <div class="whatIlove__classification">
           <div class="detail">
@@ -97,17 +98,16 @@
               </div>
             </div>
           </div>
-       
     </section>
-    <section class="contact">
+    <section id="contact">
         <h1>🎉 Contact</h1>
         <h3>Contact me if you want to know more about me!</h3>
         <a href="https://github.com/Elenapark/" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://velog.io/@elena_park" target="_blank"><i class="fab fa-blogger"></i></a>
         <a href="https://www.instagram.com/elena_park33/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="contact__upBtn"><i class="fas fa-arrow-up"></i></a>
+        <a class="contact__upBtn"><i class="fas fa-arrow-up"></i></a>
     </section>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   </body>
 </html>
